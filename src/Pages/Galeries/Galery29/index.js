@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Lightbox from 'react-native-lightbox';
 
 import { FlatList, Image, TouchableHighlight, View, ScrollView, Text} from "react-native";
-import Header from '../../../Components/Header';
+import Header from '../../../Components/HeaderStack';
 import backgroundImage from '../../../assets/backgroundImage.png';
 
 import { TitleLines, TitleLinesText, TitleBox } from '../../../Components/Styled/styles';

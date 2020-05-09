@@ -1,5 +1,5 @@
 import React from 'react'
-import { ScrollView, View, Text, Image, TouchableOpacity, Linking, TouchableOpacityComponent } from 'react-native';
+import { ScrollView, View, Text, Image } from 'react-native';
 import MapView from 'react-native-maps';
 
 
@@ -8,16 +8,8 @@ import Inscrições from '../../Components/Sections/inscrições';
 import Header from '../../Components/Header';
 import Styles from './styles';
 
-
-import Image30 from '../../assets/galeries/30.jpg';
-import Image29 from '../../assets/galeries/29.jpg';
-import Image28 from '../../assets/galeries/28.jpg';
-import Image27 from '../../assets/galeries/27.jpg';
-
-
 import backgroundImage from '../../assets/backgroundImage.png';
-import { BigButton, BigButtonText, 
-    TitleLines, TitleLinesText, TitleBox } from '../../Components/Styled/styles';
+import { TitleLines, TitleLinesText, TitleBox } from '../../Components/Styled/styles';
 
 
 export default function Localization() {

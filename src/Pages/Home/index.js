@@ -46,6 +46,9 @@ export default function Home(){
     function NavigationToInscricao() {
         Navigator.navigate('Inscrição');
     }
+    function NavigationToNews() {
+        Navigator.navigate('Notícias');
+    }
     
     return (
         <ScrollView style={Styles.containerHome}>
@@ -72,7 +75,7 @@ export default function Home(){
                     <Text style={Styles.buttonText}>Certificado</Text>
                 </TouchableOpacity>
 
-                <TouchableOpacity style={Styles.button}>
+                <TouchableOpacity style={Styles.button} onPress={() => NavigationToNews()} >
                 <Image source={IconNoticias} /> 
                     <Text style={Styles.buttonText}>Notícias</Text>
                 </TouchableOpacity>

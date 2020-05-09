@@ -20,11 +20,19 @@ import Certificado from './Pages/Certificado';
 import Localization from './Pages/Localization';
 import Programation from './Pages/Programation/';
 import Inscricao from './Pages/Inscricao/';
+import News from './Pages/News/';
+import Detail from './Pages/News/Detail';
 
 
 const Drawer = createDrawerNavigator();
 const Stack = createStackNavigator();
 
+const NewsScreen = () => (
+  <Stack.Navigator initialRouteName={News} screenOptions= {{ headerShown: false}}>
+    <Stack.Screen name="News" component={News} />
+    <Stack.Screen name="Detail" component={Detail} />
+  </Stack.Navigator>
+);
 
 const GaleriesScreen = () => (
   <Stack.Navigator initialRouteName={Galeries} screenOptions= {{ headerShown: false}}>
@@ -61,6 +69,7 @@ export default function Routes() {
                 }}
                 > 
                 <Drawer.Screen name="Home" component={Home} />
+                <Drawer.Screen name="Notícias" component={NewsScreen} />
                 <Drawer.Screen name="Sobre" component={About} />
                 <Drawer.Screen name="Contato" component={Contact} />
                 <Drawer.Screen name="Galeria" component={GaleriesScreen} />

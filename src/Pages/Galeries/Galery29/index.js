@@ -123,8 +123,8 @@ export default function Galery29() {
 
             renderItem={({item})=>(
             
-            <Lightbox activeProps={{height: 250, width: '100%'}}>
-                <Image resizeMode="cover" source={item.source}  style={Styles.images} />
+            <Lightbox springConfig={{tension: 100, friction: 100}} activeProps={{height: 250, width: '100%'}}>
+                <Image resizeMode="contain" source={item.source}  style={Styles.images} />
             </Lightbox>    
                 
         )}
